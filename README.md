@@ -1,6 +1,8 @@
 # MVC-JQuery-WebApi-Ado-StoredProcedure-CRUD-Project
-This project demonstrates CRUD operation using HTML, JQuery, MVC-Web API, AdoNet, and Stored Procedure ( SQL Server).  
+This project demonstrates CRUD operation using HTML, JQuery, MVC-Web API, AdoNet, and Stored Procedure ( SQL Server).
+
 To Demo CRUD Operation, let's create a database table called Cat. 
+
 /****** Object:  Table [dbo].[Cat]    Script Date: 12/2/2018 7:05:26 PM ******/
 SET ANSI_NULLS ON
 GO
@@ -18,7 +20,11 @@ CREATE TABLE [dbo].[Cat](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
+
+
 To wrap Create, Retrieve, Update, and Delete operation, create the following stored procedure in the SQL Server.
+
+
 /****** Object:  StoredProcedure [dbo].[pro_PerformCRUDforCat]    Script Date: 12/2/2018 6:55:25 PM ******/
 SET ANSI_NULLS ON
 GO
@@ -124,6 +130,9 @@ BEGIN
 END
 
 Download and open MvcJQueryWebApiAdoSpCRUDProject from here.
+
 Change database server and database name in the Web.Config connection string.
+
 <add name="connStringName" connectionString="Data Source=DBServer;Initial Catalog=Practice;Integrated Security=True" providerName="System.Data.SqlClient" />
+
 Run the project in the visal studio. 
